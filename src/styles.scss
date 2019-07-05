@@ -1,3 +1,154 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../src/assets/scss/sweetalert.scss';
 @import '../src/assets/scss/variables.scss';
+
+/* CSS Personalizado */
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus,
+a {
+    text-decoration: none;
+    color: #fff !important;
+}
+body.azul {
+    background-color: #1a3b47 !important;
+    border-bottom: 15px solid #fbbb21;
+    padding: 3%;
+}
+.center {
+    text-align: center;
+    position: relative;
+    top: 200px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #e8e8e8 !important;
+    border-color: #03657c !important;
+}
+.panel-primary {
+    border-color: #d8d8d8 !important;
+}
+.btn-primary {
+    background-color: #1a3b47;
+    border: #1a3b47;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:after,
+.btn-primary.active,
+.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary {
+    background-color: #fbbb21 !important;
+    border: #fbbb21;
+}
+.panel-heading h4,
+.header-forms h4 {
+    color: #555 !important;
+}
+.panel-heading h4 span,
+.header-forms h4 span {
+    color: #d22215;
+    font-size: 12px;
+}
+.panel-detail .control-label {
+    text-decoration: none;
+}
+.panel-container {
+    padding-top: 15px;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+#content {
+    left: 0px !important;
+    width: calc(100% - 0px) !important;
+    min-height: 100%;
+    position: relative;
+    margin-left: 0px !important;
+}
+#div_multilevelpushmenu {
+    height: 100% !important;
+    position: fixed;
+    z-index: 9;
+}
+.top {
+    background-color: #1a3b47 !important;
+    border-bottom: 10px solid #03657c;
+    padding: 3%;
+}
+.title,
+.conteudo {
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.title {
+    padding-top: 4%;
+}
+
+.footer-img {
+    position: relative;
+    bottom: 5px;
+    left: 3.6%;
+}
+.footer-azul {
+    background-color: #1a3b47;
+}
+.footer-azul-claro {
+    background-color: #03657c;
+}
+.footer-amarelo {
+    background-color: #fbbb21;
+}
+.branco-26px {
+    color: #fff;
+    font-size: 46px;
+}
+.amarelo-16px {
+    color: #fbbb21;
+    font-size: 16px;
+}
+.text {
+    color: #1a3b47;
+    font-size: 26px;
+    font-family: 'Neo Sans std', Courier, monospace;
+}
+.painel-avisos {
+    font-family: 'Neo Sans std', Courier, monospace;
+    position: relative;
+    /* bottom: 13.5px; */
+    right: 30px;
+}
+.indra-minsalt {
+    position: relative;
+    top: 25px;
+}
+.img-responsive {
+    width: 1138px;
+    border-left: 20px solid #1a3b47;
+}
+.hr {
+    padding-left: 2%;
+    text-align: left;
+    display: block;
+    width: 2em;
+    height: 3px;
+    border-radius: 2px;
+    margin: 0;
+    border: 0;
+    background: #fbbb21;
+}
+h1 {
+    color: #1a3b47;
+    font-family: 'Neo Sans std', Courier, monospace;
+}
+h4 {
+    color: #1a3b47;
+    font-family: 'Neo Sans std light', Courier, monospace;
+}
