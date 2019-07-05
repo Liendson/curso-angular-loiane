@@ -1,0 +1,15 @@
+<h5>*ngIf</h5>
+<div *ngIf="cursos.length == 0" >
+  Não existem cursos!
+</div>
+<div *ngIf="cursos.length > 0" >
+  <div *ngFor="let curso of cursos" >
+    <li>
+      {{curso}}
+    </li>
+  </div>
+</div>
+
+<div>
+  Data : {{ hoje | date: 'dd/MM/yyyy - HH:mm' }}
+</div>

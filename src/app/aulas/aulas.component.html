@@ -1,0 +1,48 @@
+<p>
+  Lista de cursos do portal {{ urlPortal }}
+</p>
+
+<!-- diretiva *ngFor para iterar arrays -->
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let curso of cursos">{{ curso }}</li>
+</ul>
+
+<!-- utilizando o data-binding para concatenar -->
+<img src="{{ url }}">
+<img [src]="url">
+
+<!-- utilizando o data-binding com CSS e bootstrap-->
+<div> 
+  Selecione uma Classe: 
+  <select #classe (change)='0'>
+    <option value="alert-success">Sucesso</option>
+    <option value="alert-info">Info</option>
+    <option value="alert-warning">Alerta</option>
+    <option value="alert-danger">Erro</option>
+  </select>
+  <br><br>
+
+  <div class="alert {{ classe.value }}"> Texto </div>
+
+  <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
+  <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">Info</div>
+  <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">Alerta</div>
+  <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">Erro</div>
+
+  <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">SÓ APARECE CASO O ERRO ESTEJA MARCADO</div>
+</div>
+
+<!-- utilizando o event-binding com onclick, onchange e onmouseout-->
+<div> 
+  Event Binding: 
+  <button (click)='botaoClicado()' class="btn btn-primary"> Click-me! </button>
+
+  <br><br>
+
+  <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor($event.target.value)" (blur)="salvarValor($event.target.value)">
+
+  <p>O valor atual é: {{ valorAtual }}</p>
+  <p>O valor salvo é: {{ valorSalvo }}</p>
+  <br>
+  <p (mouseover)="onMouseOut()" (mouseout)="onMouseOut()" [class.highlight]="isMouseOver">Passe o mouse sobre!</p>
+</div>
