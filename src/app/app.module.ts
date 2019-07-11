@@ -1,3 +1,4 @@
+import { AulasModule } from './aulas/aulas.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,8 +7,9 @@ import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { AulasComponent } from './aulas/aulas.component';
-import { Aulas2Component } from './aulas/aulas2/aulas2.component';
+import { FundoAmareloDirective } from './diretivas/fundo-amarelo.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
+import { HighlightMouseDirective } from './diretivas/highlight-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { Aulas2Component } from './aulas/aulas2/aulas2.component';
     ContentComponent,
     FooterComponent,
     HeaderComponent,
-    AulasComponent,
-    Aulas2Component
+    FundoAmareloDirective,
+    DiretivasCustomizadasComponent,
+    HighlightMouseDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AulasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
