@@ -1,9 +1,11 @@
-import { Directive, HostListener, HostBinding, ElementRef, Renderer } from '@angular/core';
+import { Directive, HostListener, HostBinding, OnInit, Input } from '@angular/core';
 
 @Directive({
   selector: '[appHighlightMouse]'
 })
-export class HighlightMouseDirective {
+export class HighlightMouseDirective implements OnInit {
+
+  @Input('appHighlightMouse') defaultColor;
 
   private backgroundColor: string;
 
@@ -19,10 +21,13 @@ export class HighlightMouseDirective {
 
   @HostListener('mouseleave') onMouseLeave() {
     // this.renderer.setElementStyle(this.elementRef.nativeElement, 'background-color', 'white');
-    this.backgroundColor = 'white';
+    this.backgroundColor = this.defaultColor;
   }
 
+  constructor() { }
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer) { }
+  ngOnInit() {
+    this.backgroundColor = this.defaultColor;
+  }
 
 }
