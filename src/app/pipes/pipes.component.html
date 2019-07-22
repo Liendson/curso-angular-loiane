@@ -1,0 +1,16 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Informações do Livro</h1>
+
+      <p>Título: {{ livro.titulo | uppercase | camelCase }}</p>
+      <p>Estrelas: {{ livro.estrelas | number:'1.1-2'}}</p>
+      <p>Páginas: {{ livro.paginas }}</p>
+      <p>Preço: {{ livro.preco | currency:'BRL': true}}</p>
+      <p>Data de Lançamento: {{ livro.data | date:'dd/MM/yy'}}</p>
+      <p>Url: {{ livro.url }}</p>
+
+    </div>
+  </div>
+</div>

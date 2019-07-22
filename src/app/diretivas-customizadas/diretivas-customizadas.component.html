@@ -2,6 +2,9 @@
   Texto com Fundo amarelo!
 </p>
 
-<button appFundoAmarelo (click)="funcaoTeste()">Botão</button>
+<button (click)="metodoTeste()">Deletar</button><br>
+<button (click)="metodoTeste2()">Erro</button><br>
+<input type="text" #valorErro><br>
+<button (click)="metodoTeste3(valorErro.value)">Erro Personalizado</button>
 
 <p [appHighlightMouse]="'red'">appHighlightMouse railaiti</p>

@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
-import * as swal from 'sweetalert2';
-import Swal from 'sweetalert2';
+import { AlertasComponent } from './alertas/alertas.component';
 
 @Component({
   selector: 'app-diretivas-customizadas',
@@ -10,43 +9,16 @@ import Swal from 'sweetalert2';
 })
 export class DiretivasCustomizadasComponent {
 
-  constructor() { }
+  constructor(private alertasComponent: AlertasComponent) { }
 
-  public funcaoTeste() {
-    Swal.fire({
-      title: 'Você tem certeza?',
-      text: 'Essa ação é irreversível',
-      type: 'warning',
-      showCancelButton: true,
-    }).then((result) => {
-      if (result.value) {
-        Swal.fire({
-          title: 'teste',
-          text: 'texto teste',
-          type: 'success'
-        });
-      }
-    });
+  metodoTeste() {
+    this.alertasComponent.mensagemConfirmacaoDeletar();
   }
-
-
-
-  // public funcaoTeste() {
-  //   Swal.fire({
-  //     title: 'Você tem certeza?',
-  //     text: 'Essa ação é irreversível',
-  //     type: 'warning',
-  //     showCancelButton: true,
-  //   }).then((result) => {
-  //     if (result.value) {
-  //       Swal.fire({
-  //         title: 'teste',
-  //         text: 'texto teste',
-  //         type: 'success'
-  //       });
-  //     }
-  //   });
-  // }
-
+  metodoTeste2() {
+    this.alertasComponent.mensagemErro();
+  }
+  metodoTeste3(erro: string) {
+    this.alertasComponent.mensagemErroPersonalizado(erro);
+  }
 
 }
