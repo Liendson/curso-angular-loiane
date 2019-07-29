@@ -8,7 +8,7 @@ Pastas e Organizações -
 
 	|-- modules
 
-    |-- module1
+    |-- module
         |-- [+] components
         |-- module1.service.ts
         |-- module1.module.ts
