@@ -6,7 +6,7 @@ O projeto foi gerado com o angular - CLI e está organizado na estrutura padrão
 
 Pastas e Organizações -
 
-|-- modules
+	|-- modules
 
     |-- module1
         |-- [+] components
@@ -14,25 +14,25 @@ Pastas e Organizações -
         |-- module1.module.ts
         |-- module1.routes.ts
 
-|-- shared
-        |-- [+] components
-        |-- [+] mocks
-        |-- [+] models
-        |-- [+] directives
-        |-- [+] pipes
+	|-- shared
+		|-- [+] components
+		|-- [+] mocks
+		|-- [+] models
+		|-- [+] directives
+		|-- [+] pipes
 
-|-- core
-        |-- [+] authentication
-        |-- [+] footer
-        |-- [+] guards
-        |-- [+] http
-        |-- [+] interceptors
-        |-- [+] mocks
-        |-- [+] services
-        |-- [+] header
+	|-- core
+		|-- [+] authentication
+		|-- [+] footer
+		|-- [+] guards
+		|-- [+] http
+		|-- [+] interceptors
+		|-- [+] mocks
+		|-- [+] services
+		|-- [+] header
 
-|-- app.module.ts
-|-- app.component.ts
+	|-- app.module.ts
+	|-- app.component.ts
 
 ## Instalação do projeto
 
