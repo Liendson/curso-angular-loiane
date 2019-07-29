@@ -1,0 +1,16 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <h5>Login</h5>
+      <div class="form" class="form-group">
+
+        <input type="text" class="form-control" placeholder="Usuário" #usuario>
+        <br>
+        <input type="password" class="form-control" placeholder="Senha" #senha>
+        
+      </div>
+      <button class="btn btn-info" (click)="autenticarUsuario(usuario.value, senha.value)">Entrar</button>
+    </div>
+  </div>
+</div>

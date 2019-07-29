@@ -1,0 +1,13 @@
+// Arquivo para Customização de Checkboxes do Projeto
+
+.btn {
+   span.glyphicon {
+      opacity: 0;
+   }
+}
+
+.btn.active {
+   span.glyphicon {
+      opacity: 1;
+   }
+}

@@ -1,0 +1,69 @@
+// Arquivo para Customizar os campos de formulário do Projeto
+
+div.form-control.ng-dirty.ng-invalid {
+   color: #a94442;
+}
+
+div.form-control.ng-dirty.ng-valid {
+   color: #42A948;
+}
+
+input.form-control.ng-invalid.ng-untouched {
+   border-left: 5px solid #a94442
+}
+
+input.form-control.ng-valid.ng-untouched {
+   border-left: 5px solid #42A948
+}
+
+input.form-control.ng-invalid.ng-touched {
+   border-left: 5px solid #a94442
+}
+
+input.form-control.ng-valid.ng-touched {
+   border-left: 5px solid #42A948
+}
+
+select.form-control.ng-invalid.ng-touched {
+   border: 1px solid #a94442
+}
+
+radio.form-control.ng-valid.ng-touched {
+   border: 1px solid #42A948
+}
+
+.form-text.ng-invalid.ng-dirty.ng-touched {
+   color: #a94442
+}
+
+.form-text.ng-valid.ng-dirty.ng-touched {
+   color: #42A948
+}
+
+.input-invalido {
+   border-left: 5px solid #a94442 !important
+}
+
+.input-valido {
+   border-left: 5px solid #42A948 !important
+}
+
+textarea.form-control.ng-invalid.ng-untouched {
+   border-left: 5px solid #a94442
+}
+
+textarea.form-control.ng-valid.ng-untouched {
+   border-left: 5px solid #42A948
+}
+
+textarea.form-control.ng-invalid.ng-touched {
+   border-left: 5px solid #a94442
+}
+
+textarea.form-control.ng-valid.ng-touched {
+   border-left: 5px solid #42A948
+}
+
+.doc-invalido {
+   border-left: 5px solid #a94442 !important
+}

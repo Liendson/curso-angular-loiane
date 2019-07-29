@@ -1,0 +1,53 @@
+// Arquivo para Customizar os Panels do Projeto
+
+.panel-primary {
+
+   border-color: #d8d8d8 !important;
+
+   .panel-heading {
+      color: #fff;
+      background-color: #e8e8e8 !important;
+      border-color: #d8d8d8 !important;
+
+      h4 {
+         color: #555 !important;
+
+         span {
+            color: #d22215;
+            font-size: 12px;
+         }
+      }
+   }
+}
+
+.header-forms {
+   h4 {
+      color: #555 !important;
+
+      span {
+         color: #d22215;
+         font-size: 12px;
+      }
+   }
+} 
+
+.panel-detail {
+   .control-label {
+      text-decoration: none;
+   }
+}
+
+.panel-container {
+   padding-top: 15px;
+   border-left: 1px solid #dedede;
+   border-right: 1px solid #dedede;
+   border-bottom: 1px solid #dedede;
+}
+
+#content {
+   left: 0px !important;
+   width: calc(100% - 0px) !important;
+   min-height: 100%;
+   position: relative;
+   margin-left: 0px !important;
+}

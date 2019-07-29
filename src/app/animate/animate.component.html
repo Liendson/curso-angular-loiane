@@ -1,0 +1,5 @@
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+  <p>A Caixa agora está {{ isOpen ? 'Aberta' : 'Fechada' }}!</p>
+  <button (click)="toggle()">{{ isOpen ? 'Fechar' : 'Abrir' }}</button>
+</div>
+

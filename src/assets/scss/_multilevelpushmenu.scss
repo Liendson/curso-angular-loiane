@@ -1,0 +1,49 @@
+// Arquivo para Customizar a Biblioteca de Menu do Projeto
+
+.multilevelpushmenu_wrapper {
+   a {
+      font-size: 1.1em !important;
+      color: #a81411 !important;
+   }
+
+   li {
+      border-top: 1px solid #dadada !important;
+
+   }
+
+   li:last-child {
+      border-bottom: 1px solid #dadada !important;
+   }
+
+   li:hover {
+      background: none !important;
+   }
+
+   .backItemClass {
+      background: #a81411 !important;
+      border-top: 1px solid #a81411 !important;
+
+      a {
+         color: #FFF !important;
+      }
+   }
+
+   .multilevelpushmenu_inactive {    
+      background: #eeeff6 !important;
+      visibility: hidden !important;
+   }
+
+   .levelHolderClass {
+      background: #eeeff6 !important;
+   }
+
+   h2 {
+      color: #a81411 !important
+   }
+}
+
+#div_multilevelpushmenu {
+   height: 100% !important;
+   position: fixed;
+   z-index: 9;
+}

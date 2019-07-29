@@ -1,0 +1,28 @@
+// Arquivo para Customizar os Modais do Projeto
+
+.modal-dialog {
+   position: initial !important;
+}
+
+.modal-title {
+   i {
+      color: #50668f;
+   }
+}
+
+.modal-small {
+   table {
+      tr {
+         td {
+         font-size: 0.8em;
+         }
+      }
+   }
+}
+
+.modal {
+   .dropdown-menu > li > a {
+      font-size: 10px;
+      cursor: pointer;
+   }
+}

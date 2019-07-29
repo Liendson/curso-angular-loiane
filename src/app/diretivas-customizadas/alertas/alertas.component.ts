@@ -13,6 +13,14 @@ export class AlertasComponent implements OnInit {
 
   constructor() { }
 
+  // Mensagem SUCESSO LOGIN
+  public loginSucesso() {
+      Swal.fire({
+        title: 'Autenticado!',
+        type: 'success',
+      });
+  }
+
   // Mensagem SUCESSO
   public mensagemSucesso(tipo: string) {
     if (tipo === 'alterar') {

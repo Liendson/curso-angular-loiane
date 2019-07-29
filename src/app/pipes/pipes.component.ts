@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { interval } from 'rxjs';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-pipes',
   templateUrl: './pipes.component.html',
@@ -15,6 +16,15 @@ export class PipesComponent implements OnInit {
     data: new Date(),
     url: 'www.google.com',
   };
+
+  livros: string[] = ['teste1', 'teste2'];
+
+  // utilizando pipes async para simular requisição ao servidor
+  valorAsync = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Valor recebido'), 2000);
+  }).catch(() => alert('Erro'));
+
+  valorAsync2 = interval(2000).pipe(map(() => 'Valor Recebido 2'));
 
   constructor() { }
 

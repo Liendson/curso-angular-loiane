@@ -1,0 +1,46 @@
+.container-fluid {
+
+   background-color: #dd0031;
+   color: #fff;
+   margin-bottom: 2em;
+
+   .navbar-header {
+      margin-left: -15px !important;
+   }
+}
+
+.background {
+
+   font-family: "Neo Sans std";
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   width: 100%;
+   // min-height: 480px;
+   // height: 80vh;
+   box-sizing: border-box;
+   padding: auto;
+   overflow: hidden;
+   transform-origin: 100%;
+   background-color: #1976d2;
+   background: linear-gradient(145deg, #0d47a1, #42a5f5);
+   color: #fff; 
+   // transform: skewY(8deg);
+   
+}
+
+div {
+
+   a {
+      color:#fff !important;
+   }
+   a:hover, a:active {
+      color:#c3002f !important;
+   }
+   a.navbar-brand {
+      color:#fff !important;
+   }
+   
+}

@@ -1,0 +1,54 @@
+// Arquivo para Customizar as Tabelas do Projeto
+
+.paginate_button {
+   margin: 0 !important;
+   padding: 0 !important;
+   display: initial !important;
+}
+
+.dataTables_wrapper {
+   .dataTables_paginate {
+      .paginate_button:hover {
+         border: 1px solid transparent !important;
+         margin: 0px !important;
+         padding: 0px !important;
+      }
+   }
+} 
+
+.pagination {
+   .active {
+      a {
+         background-color: #d22215 !important;
+         border-color: #ea322d !important;
+         color: #FFF !important;
+      }
+   } 
+} 
+
+table.dataTable {
+   thead {
+      .sorting:after ,
+      .sorting_asc:after,
+      .sorting_desc:after {
+         content: none !important;
+      }
+   }
+}
+
+.pagination {
+   li {
+      a {
+         color: #a03d36 !important;
+      }
+   } 
+} 
+
+.btn-link {
+   color: #d22215 !important;
+}
+
+.list-group-item.active {
+   background-color: #d22215 !important;
+   border-color: #ea322d !important;
+}

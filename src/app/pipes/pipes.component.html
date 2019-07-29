@@ -11,6 +11,14 @@
       <p>Data de Lançamento: {{ livro.data | date:'dd/MM/yy'}}</p>
       <p>Url: {{ livro.url }}</p>
 
+      <ul>
+        <li *ngFor="let liv of livros"> {{ liv }}</li>
+      </ul>
+
+      {{ valorAsync | async }}
+
+      {{ valorAsync2 | async }}
+
     </div>
   </div>
 </div>

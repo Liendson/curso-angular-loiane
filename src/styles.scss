@@ -1,3 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../src/assets/scss/botoes.scss';
+@import '../src/assets/scss/checkbox.scss';
+@import '../src/assets/scss/fontes.scss';
+@import '../src/assets/scss/formularios.scss';
+@import '../src/assets/scss/modals.scss';
+@import '../src/assets/scss/multilevelpushmenu.scss';
+@import '../src/assets/scss/panels.scss';
 @import '../src/assets/scss/sweetalert.scss';
-@import '../src/assets/scss/variables.scss';
+@import '../src/assets/scss/tabelas.scss';
+@import '../src/assets/scss/variaveis.scss';
+
+html, body {
+   font-family: 'Neo Sans std';
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+hr {
+   margin-top: 0px !important;
+   margin-bottom: 15px !important;
+}
+
+textarea {
+   resize: vertical;
+}
+
+#conteudo {
+   a:hover {
+      text-decoration: none;
+   }
+   .page-header {
+      border-bottom: 1px solid #a94442;
+   }
+}
+
+.confirm:hover {
+   background-color: #870909 !important;
+}
+
+[class^="base-icon-"]:before,
+[class*=" base-icon-"]:before {
+   font-family: "baseicons";
+   font-style: normal;
+   font-weight: normal;
+   -webkit-font-smoothing: antialiased;
+   display: inline-block;
+   text-decoration: inherit;
+   width: 1em;
+   text-align: center;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1em;
+}
+
+.lst-opcoes-login {
+   a {
+      color: #a81411 !important;
+   }
+}
