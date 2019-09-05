@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <h2>Template Form Driven - Formulário</h2>
+      <form #form="ngForm" class="form" class="form-group" (ngSubmit)="onSubmit(form)">
+
+        <div ngModelGroup="endereco">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="">CEP</label>
+              <input type="number" class="form-control" placeholder="CEP" name="cep" (blur)="buscaCEP($event.target.value, form)" required #cep>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="">Rua</label>
+              <input type="text" class="form-control" placeholder="Rua" name="rua" required #rua>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="">Bairro</label>
+              <input type="text" class="form-control" placeholder="Bairro" name="bairro" required>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="">Estado</label>
+              <input type="text" class="form-control" placeholder="Estado" name="estado" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <button class="form-control btn btn-info btn" type="submit" [disabled]="!form.valid">Entrar</button>
+        </div>
+
+        <div class="col-md-2">
+          <button class="form-control btn btn-info btn" type="submit" (click)="form.reset()">Limpar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
